@@ -4,10 +4,10 @@
     <title></title>
     <description>I'm Jaehyeong Seo, a iOS developer from Korea.
 </description>
-    <link>http://caudatus.com/centrarium/</link>
-    <atom:link href="http://caudatus.com/centrarium/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Mar 2018 16:31:07 +0900</pubDate>
-    <lastBuildDate>Thu, 22 Mar 2018 16:31:07 +0900</lastBuildDate>
+    <link>http://caudatus.com/</link>
+    <atom:link href="http://caudatus.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 22 Mar 2018 17:17:05 +0900</pubDate>
+    <lastBuildDate>Thu, 22 Mar 2018 17:17:05 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -161,8 +161,8 @@ for (idx, num) in [5,1,2,4,3].sorted().enumerated().reversed() {
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Thu, 22 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://caudatus.com/centrarium/swift/2018/03/22/Collection-Functions-02.html</link>
-        <guid isPermaLink="true">http://caudatus.com/centrarium/swift/2018/03/22/Collection-Functions-02.html</guid>
+        <link>http://caudatus.com/swift/2018/03/22/Collection-Functions-02.html</link>
+        <guid isPermaLink="true">http://caudatus.com/swift/2018/03/22/Collection-Functions-02.html</guid>
         
         <category>zip</category>
         
@@ -299,8 +299,8 @@ for i in stride(from: 0, to: 5, by: -1) {
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 22 Mar 2018 00:00:00 +0900</pubDate>
-        <link>http://caudatus.com/centrarium/swift/2018/03/22/Collection-Functions-01.html</link>
-        <guid isPermaLink="true">http://caudatus.com/centrarium/swift/2018/03/22/Collection-Functions-01.html</guid>
+        <link>http://caudatus.com/swift/2018/03/22/Collection-Functions-01.html</link>
+        <guid isPermaLink="true">http://caudatus.com/swift/2018/03/22/Collection-Functions-01.html</guid>
         
         <category>stride</category>
         
@@ -336,8 +336,8 @@ file system내의 Directory&lt;/p&gt;
 파일의 path나 url을 요구하는 경우가 있다&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Feb 2018 00:00:00 +0900</pubDate>
-        <link>http://caudatus.com/centrarium/ios/2018/02/27/property-list.html</link>
-        <guid isPermaLink="true">http://caudatus.com/centrarium/ios/2018/02/27/property-list.html</guid>
+        <link>http://caudatus.com/ios/2018/02/27/property-list.html</link>
+        <guid isPermaLink="true">http://caudatus.com/ios/2018/02/27/property-list.html</guid>
         
         <category>plist</category>
         
@@ -421,8 +421,8 @@ file system내의 Directory&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 27 Feb 2018 00:00:00 +0900</pubDate>
-        <link>http://caudatus.com/centrarium/swift/2018/02/27/enumerations.html</link>
-        <guid isPermaLink="true">http://caudatus.com/centrarium/swift/2018/02/27/enumerations.html</guid>
+        <link>http://caudatus.com/swift/2018/02/27/enumerations.html</link>
+        <guid isPermaLink="true">http://caudatus.com/swift/2018/02/27/enumerations.html</guid>
         
         <category>enum</category>
         
@@ -469,8 +469,8 @@ file system내의 Directory&lt;/p&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 26 Feb 2018 00:00:00 +0900</pubDate>
-        <link>http://caudatus.com/centrarium/ios/2018/02/26/singleton-pattern.html</link>
-        <guid isPermaLink="true">http://caudatus.com/centrarium/ios/2018/02/26/singleton-pattern.html</guid>
+        <link>http://caudatus.com/ios/2018/02/26/singleton-pattern.html</link>
+        <guid isPermaLink="true">http://caudatus.com/ios/2018/02/26/singleton-pattern.html</guid>
         
         <category>singleton</category>
         

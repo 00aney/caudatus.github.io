@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://caudatus.com/centrarium/swift/2018/03/22/Collection-Functions-02.html</loc>
+<loc>http://caudatus.com/swift/2018/03/22/Collection-Functions-02.html</loc>
 <lastmod>2018-03-22T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://caudatus.com/centrarium/swift/2018/03/22/Collection-Functions-01.html</loc>
+<loc>http://caudatus.com/swift/2018/03/22/Collection-Functions-01.html</loc>
 <lastmod>2018-03-22T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://caudatus.com/centrarium/ios/2018/02/27/property-list.html</loc>
+<loc>http://caudatus.com/ios/2018/02/27/property-list.html</loc>
 <lastmod>2018-02-27T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://caudatus.com/centrarium/swift/2018/02/27/enumerations.html</loc>
+<loc>http://caudatus.com/swift/2018/02/27/enumerations.html</loc>
 <lastmod>2018-02-27T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://caudatus.com/centrarium/ios/2018/02/26/singleton-pattern.html</loc>
+<loc>http://caudatus.com/ios/2018/02/26/singleton-pattern.html</loc>
 <lastmod>2018-02-26T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://caudatus.com/centrarium/</loc>
+<loc>http://caudatus.com/</loc>
 </url>
 <url>
-<loc>http://caudatus.com/centrarium/posts/</loc>
+<loc>http://caudatus.com/posts/</loc>
 </url>
 </urlset>
