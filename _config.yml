@@ -14,7 +14,9 @@ name: Seo Jaehyeong
 description: >
   I'm Jaehyeong Seo, a iOS developer from Korea.
 
-baseurl: ""
+
+baseurl: 
+>>>>>>> eaf20323583dba29e987717b0518b485d5ab1200
 url: "http://caudatus.com"
 cover:
 logo: "/assets/logo.png"
