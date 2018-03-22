@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>열거형 - Enumerations</title>
+  <meta name="description" content="열거형(Enumerations)">
+  
+  <meta name="author" content="Seo Jaehyeong">
+  <meta name="copyright" content="&copy; Seo Jaehyeong 2018">
+  
+
+  <!-- External libraries -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/monokai-sublime.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+
+  <!-- Favicon and other icons (made with http://www.favicon-generator.org/) -->
+  <link rel="shortcut icon" href="/centrarium/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/centrarium/assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/centrarium/assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/centrarium/assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/centrarium/assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/centrarium/assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/centrarium/assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/centrarium/assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/centrarium/assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/centrarium/assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/centrarium/assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/centrarium/assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/centrarium/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/centrarium/assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/centrarium/assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="/centrarium/assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/centrarium/assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  
+
+  
+
+  
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="/centrarium/css/main.css">
+  <link rel="canonical" href="http://caudatus.com/centrarium/swift/2018/02/27/enumerations.html">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://caudatus.com/centrarium/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/centrarium/" class="logo">
+      
+      <img src="/centrarium/assets/logo.png" alt="">
+      
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        
+          
+        
+          
+        
+          
+        
+          
+          <li class="nav-link"><a href="/centrarium/posts/">Posts</a>
+          
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+<div class="post-header-container " >
+  <div class="scrim ">
+    <header class="post-header">
+      <h1 class="title">열거형 - Enumerations</h1>
+      <p class="info">by <strong>Seo Jaehyeong</strong></p>
+    </header>
+  </div>
+</div>
+
+<div class="wrapper">
+
+ <span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+ 
+
+<section class="post-meta">
+  <div class="post-date">February 27, 2018</div>
+  <div class="post-categories">
+  in 
+    
+    <a href="/centrarium/category/Swift">Swift</a>
+    
+  
+  </div>
+</section>
+
+<article class="post-content">
+  <h2 id="enumerations">열거형(Enumerations)</h2>
+
+<ul>
+  <li>그룹에 대한 연관된 값을 정의하고 사용가능한 타입</li>
+  <li>다른 언어와 달리 항목 그 자체가 고유의 값으로 해당 항목에 값을 매칭 시킬 필요가 없다.</li>
+  <li>원시값(rawValue)이라는 형태로 실제 값(정수, 실수, 문자 등)을 부여 할 수 있다.</li>
+  <li>열거형의 이니셜라이즈를 정의 할 수 있으며, 프로토콜 채택, 연산프로퍼티, 메소드 등을 만들 수 있다.</li>
+</ul>
+
+<h3 id="section">열거형 문법</h3>
+<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="kd">enum</span> <span class="o">&lt;</span><span class="n">열거형</span> <span class="n">이름</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="k">case</span> <span class="o">&lt;</span><span class="n">열거</span> <span class="n">항목1</span><span class="o">&gt;</span>
+  <span class="k">case</span> <span class="o">&lt;</span><span class="n">열거</span> <span class="n">항목2</span><span class="o">&gt;</span>
+  <span class="k">case</span> <span class="o">&lt;</span><span class="n">열거</span> <span class="n">항목3</span><span class="o">&gt;</span>
+<span class="p">}</span>
+
+<span class="c1">//example 1</span>
+<span class="kd">enum</span> <span class="kt">CompassPoint</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">north</span>
+    <span class="k">case</span> <span class="n">south</span>
+    <span class="k">case</span> <span class="n">east</span>
+    <span class="k">case</span> <span class="n">west</span>
+<span class="p">}</span>
+
+<span class="c1">//example 2</span>
+<span class="kd">enum</span> <span class="kt">Planet</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="n">mercury</span><span class="p">,</span> <span class="n">venus</span><span class="p">,</span> <span class="n">earth</span><span class="p">,</span><span class="n">mars</span><span class="p">,</span> <span class="n">jupiter</span><span class="p">,</span> <span class="n">saturn</span><span class="p">,</span><span class="n">uranus</span><span class="p">,</span> <span class="n">neptune</span>
+<span class="p">}</span>
+
+<span class="c1">//열거형 값 지정</span>
+<span class="k">var</span> <span class="nv">directionToHead</span> <span class="o">=</span> <span class="kt">CompassPoint</span><span class="o">.</span><span class="n">west</span>
+<span class="n">directionToHead</span> <span class="o">=</span> <span class="o">.</span><span class="n">north</span>
+</code></pre>
+</div>
+<p>각 case의 값만 지정 할 수 있으며, 선언 후에도 dot syntax를 통해 값을 변경 할 수 있다.</p>
+
+<h3 id="switch---">Switch 문과 함께 사용</h3>
+<div class="language-swift highlighter-rouge"><pre class="highlight"><code><span class="n">directionToHead</span> <span class="o">=</span> <span class="o">.</span><span class="n">south</span>
+<span class="k">switch</span> <span class="n">directionToHead</span> <span class="p">{</span>
+<span class="k">case</span> <span class="o">.</span><span class="nv">north</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Lots of planets have a north"</span><span class="p">)</span>
+<span class="k">case</span> <span class="o">.</span><span class="nv">south</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Watch out for penguins"</span><span class="p">)</span>
+<span class="k">case</span> <span class="o">.</span><span class="nv">east</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Where the sun rises"</span><span class="p">)</span>
+<span class="k">case</span> <span class="o">.</span><span class="nv">west</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Where the skies are blue"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// Prints "Watch out for penguins"</span>
+
+
+<span class="k">let</span> <span class="nv">somePlanet</span> <span class="o">=</span> <span class="kt">Planet</span><span class="o">.</span><span class="n">earth</span>
+<span class="k">switch</span> <span class="n">somePlanet</span> <span class="p">{</span>
+<span class="k">case</span> <span class="o">.</span><span class="nv">earth</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Mostly harmless"</span><span class="p">)</span>
+<span class="k">default</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Not a safe place for humans"</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// Prints "Mostly harmless"</span>
+
+</code></pre>
+</div>
+<p>열거형의 모든 case가 제공될때는 default 값은 제공되지 않아도 되지만
+모든 case가 제공되지 않는다면 default 값은 제공 되어야 한다.</p>
+
+<h3 id="associated-values">Associated Values</h3>
+<p><img src="/assets/posts/barcode_UPC.png" title="Barcode UPC" />
+<img src="/assets/posts/barcode_QR.png" title="Barcode QR" /></p>
+
+<div class="language-swift highlighter-rouge"><pre class="highlight"><code></code></pre>
+</div>
+
+</article>
+
+
+
+<section class="tags">
+  <strong>Tags:</strong> <a href="/centrarium/tag/enum">enum</a>
+</section>
+
+
+
+
+
+	<section class="post-navigation">
+		<span class="prev-post">
+			
+				<a href="/centrarium/ios/2018/02/26/singleton-pattern.html">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="page-number">Singleton Pattern</span>
+				</a>
+			
+		</span>
+		<span class="next-post">
+			
+				<a href="/centrarium/ios/2018/02/27/property-list.html">
+					<span class="page-number">Property List</span>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-square fa-stack-2x"></i>
+						<i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+			
+		</span>
+	</section>
+
+
+
+
+</div>
+</div>
+
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading"></h3>
+
+    <div class="site-navigation">
+
+      <p><strong>Site Map</strong></p>
+      <ul class="pages">
+        
+        
+        
+        
+        
+        
+        
+        
+          <li class="nav-link"><a href="/centrarium/posts/">Posts</a>
+        
+        
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+      <ul class="social-media-list">
+        <li>
+          <a href="mailto:jaehyeongee@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <span class="username">jaehyeongee@gmail.com</span>
+          </a>
+        </li>
+
+        
+          
+          <li>
+            <a href="https://github.com/caudatus" title="Fork me on GitHub">
+              <i class="fa fa-github"></i>
+              <span class="username">Seo Jaehyeong</span>
+            </a>
+          </li>
+          
+        
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+
+      <p class="text">I'm Jaehyeong Seo, a iOS developer from Korea.
+</p>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  // Default syntax highlighting
+  hljs.initHighlightingOnLoad();
+
+  // Header
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+
+</script>
+
+
+
+
+
+
+  </body>
+
+</html>

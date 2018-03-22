@@ -1,0 +1,45 @@
+gems:
+  - jekyll-archives # Sorry, not GitHub pages friendly!
+  - jekyll-sitemap
+  - jekyll-paginate
+
+exclude:
+  - "/vendor/"
+
+# Site settings
+title:
+subtitle: "A blog about iOS/Swift development"
+email: jaehyeongee@gmail.com
+name: Seo Jaehyeong
+description: >
+  I'm Jaehyeong Seo, a iOS developer from Korea.
+
+baseurl: "/centrarium"
+url: "http://caudatus.com"
+cover:
+logo: "/assets/logo.png"
+
+# Build settings
+markdown: kramdown
+paginate: 10
+paginate_path: "/page:num/"
+inter_post_navigation: true
+highlightjs_theme: "monokai-sublime"
+
+# Archive settings (see https://github.com/jekyll/jekyll-archives/)
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+social:
+  - name: GitHub
+    icon: github
+    username: Seo Jaehyeong
+    url: https://github.com/caudatus
+    desc: Fork me on GitHub
+    share: false
