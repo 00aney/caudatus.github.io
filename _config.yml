@@ -14,7 +14,7 @@ name: Seo Jaehyeong
 description: >
   I'm Jaehyeong Seo, a iOS developer from Korea.
 
-baseurl: "/centrarium"
+baseurl: 
 url: "http://caudatus.com"
 cover:
 logo: "/assets/logo.png"
