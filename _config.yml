@@ -15,7 +15,7 @@ description: >
   I'm Jaehyeong Seo, a iOS developer from Korea.
 
 baseurl:
-url: "http://caudatus.com"
+url: "http://caudatus.github.io"
 cover:
 logo: "/assets/logo.png"
 
@@ -36,6 +36,14 @@ jekyll-archives:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: iOS
+    desc: "Posts describing Jekyll setup techniques."
+
+  - cat: Swift
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
+ 
 social:
   - name: GitHub
     icon: github
