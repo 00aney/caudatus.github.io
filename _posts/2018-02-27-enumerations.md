@@ -4,7 +4,7 @@ title:  "열거형 - Enumerations"
 date:   2018-02-27
 author: Seo Jaehyeong
 categories: Swift
-tags:	enum
+tags:	Enum
 cover:
 ---
 

@@ -4,7 +4,7 @@ title:  "Singleton Pattern"
 date:   2018-02-26
 author: Seo Jaehyeong
 categories: iOS
-tags:	singleton
+tags:	Singleton
 cover:
 ---
 

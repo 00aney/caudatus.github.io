@@ -4,7 +4,7 @@ title:  "Collection Type"
 date:   2018-03-30
 author: Seo Jaehyeong
 categories: Swift
-tags:	array set dictionary
+tags:	Array Set Dictionary
 cover:
 ---
 
