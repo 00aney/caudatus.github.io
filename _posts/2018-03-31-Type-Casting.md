@@ -4,7 +4,7 @@ title:  "Type Casting"
 date:   2018-03-31
 author: Seo Jaehyeong
 categories: Swift
-tags:	type downcasting Any AnyObject
+tags:	type downcasting Any AnyObject Test
 cover:
 ---
 
