@@ -1,0 +1,15 @@
+---
+layout: page
+title: "Tags"
+permalink: /tags/
+---
+
+{% for post in site.posts %}
+<div class="post-date">
+{% if post.tags.size > 0 %} {% for tag in post.tags %}
+  <a href="{{ post.url | prepend: site.baseurl }}">
+    <code>{{ tag }}</code></a>
+{% endfor %}{% endif %}
+</div>
+{% endfor %}
+<br>
