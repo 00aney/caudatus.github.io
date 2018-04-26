@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "스위프트의 역사"
+title:  "스위프트의 역사:1.0 ~ 2.x"
 date:   2018-04-24
 author: Seo Jaehyeong
 categories: Swift
@@ -8,7 +8,7 @@ tags:	Swift History
 cover:
 ---
 
-스위프트는 2010년 크리스 라트너(Chris Lattner)를 필두로 애플의 프로그래머들이 개발을 시작했습니다. [Objective-C][objectivec], [루비][ruby], [파이썬][python], [C#][c#], [러스트][rust], [하스켈][haskell], [CLU][clu] 등 많은 프로그래밍 언어의 콘셉트를 참고하여 만들었으며, 2014년 9월 정식 발표된 이후 현재까지 계속 발전하고 있습니다. 큰 변경사항들은 예제와 함께 [스위프트 공식 블로그][swiftBlog]에서 확인할 수 있습니다.
+스위프트는 2010년 [크리스 라트너(Chris Lattner)][chris]를 필두로 애플의 프로그래머들이 개발을 시작했습니다. [Objective-C][objectivec], [루비][ruby], [파이썬][python], [C#][c#], [러스트][rust], [하스켈][haskell], [CLU][clu] 등 많은 프로그래밍 언어의 콘셉트를 참고하여 만들었으며, 2014년 9월 정식 발표된 이후 현재까지 계속 발전하고 있습니다. 큰 변경사항들은 예제와 함께 [스위프트 공식 블로그][swiftBlog]에서 확인할 수 있습니다.
 
 ## Swift 1.0
 애플은 2014년 6월 처음으로 스위프트의 존재를 발표하고 베타 버전을 배포했습니다. 그리고 2014년 9월 Xcode 6와 함께 1.0 버전을 공식 배포했습니다. 기존 프로그래밍 언어의 기능을 대부분 갖추었으며 안전한 코딩을 위한 안전장치 등의 새로운 기능 덕에 많은 프로그래머의 관심을 받았습니다.
@@ -63,12 +63,17 @@ cover:
 - C 스타일의 for 반복문 사용을 제한했습니다.
 - 일부 컬렉션 타입에 removeFirst() 메서드를 추가했습니다.
 
+<br/>
+
+## 참고
+- [스위프트 프로그래밍][hanbit]
+- [야곰의 블로그][yagom]
 
 
 
 
 
-
+[chris]: http://nondot.org/sabre/
 [objectivec]: https://ko.wikipedia.org/wiki/오브젝티브-C
 [ruby]: https://www.ruby-lang.org/ko/
 [python]: https://ko.wikipedia.org/wiki/파이썬
@@ -79,3 +84,5 @@ cover:
 [swiftBlog]: https://swift.org/blog/
 [swift]: https://swift.org
 [github]: https://github.com/apple/swift-evolution
+[hanbit]: http://www.hanbit.co.kr/store/books/look.php?p_code=B2206901403
+[yagom]: http://blog.yagom.net/526
